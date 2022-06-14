@@ -21,25 +21,21 @@ void cekAntrean(queue<string> qu){
 }
 
 int main(){
-	int menu,pilihObat;
+	int menu,pilihMenu;
 	string nama;
 	queue<string> q;
-	string obat[] = {"Classic Pancake","Croffle","Nachos","Potato Wedges","Loco Moco"};
-	int jumlahObat,hargaObat[] = {30000,45000,50000,35000,45000};
-	int arrSize = sizeof(obat)/sizeof(obat[0]);
+	string menu[] = {"Classic Pancake","Croffle","Nachos","Potato Wedges","Loco Moco"};
+	int jumlahMenu,hargaMenu[] = {30000,45000,50000,35000,45000};
+	int arrSize = sizeof(menu)/sizeof(menu[0]);
 do{
 	cout << "-----------------------------------------------------------------" << endl;
-	cout << "                         Menu Cafe                      "<< endl;
+	cout << "                           Bubble Cafe                           "<< endl;
  	cout << "-----------------------------------------------------------------" << endl;
-	cout<<"1.Ambil Antrean\n2.Pilih Menu\n3.Cek Antrean\n4.Exit\nMasukkan Menu : ";
+	cout<<"1.Ambil Antrean\n2.Pilih Menu\n3.Cek Antrean\n4.Exit\nMasukkan Pilihan : ";
 	cin>>menu;	
 	switch(menu){
 		case 1:
-			cout<<"Masukkan Nama anda : ";
-			cin>>nama;
-			q.push(nama);
-			getch();
-			break;
+			
 		case 2:
       
 			break;

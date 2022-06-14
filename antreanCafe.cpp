@@ -24,9 +24,9 @@ int main(){
 	int menu,pilihMenu;
 	string nama;
 	queue<string> q;
-	string menu[] = {"Classic Pancake","Croffle","Nachos","Potato Wedges","Loco Moco"};
+	string Menu[] = {"Classic Pancake","Croffle","Nachos","Potato Wedges","Loco Moco"};
 	int jumlahMenu,hargaMenu[] = {30000,45000,50000,35000,45000};
-	int arrSize = sizeof(menu)/sizeof(menu[0]);
+	int arrSize = sizeof(Menu)/sizeof(Menu[0]);
 do{
 	cout << "-----------------------------------------------------------------" << endl;
 	cout << "                           Bubble Cafe                           "<< endl;
@@ -35,7 +35,11 @@ do{
 	cin>>menu;	
 	switch(menu){
 		case 1:
-			
+			cout<<"Masukkan Nama anda : ";
+			cin>>nama;
+			q.push(nama);
+			getch();
+			break;
 		case 2:
       
 			break;

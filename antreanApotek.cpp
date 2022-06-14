@@ -24,15 +24,22 @@ int main(){
 	int menu,pilihObat;
 	string nama;
 	queue<string> q;
-	string obat[] = {"Paracetamol","Dekongestan","Ibuprofen"};
-	int jumlahObat,hargaObat[] = {19000,59900,26008};
+	string obat[] = {"Paracetamol","Dekongestan","Ibuprofen","Asam Mefenamat","Antalgin"};
+	int jumlahObat,hargaObat[] = {19000,59900,26008,15000,21000};
 	int arrSize = sizeof(obat)/sizeof(obat[0]);
 do{
+	cout << "-----------------------------------------------------------------" << endl;
+	cout << "                         Menu Apotek Melati                      "<< endl;
+ 	cout << "-----------------------------------------------------------------" << endl;
 	cout<<"1.Ambil Antrean\n2.Beli Obat\n3.Cek Antrean\n4.Exit\nMasukkan Menu : ";
 	cin>>menu;	
 	switch(menu){
 		case 1:
-
+			cout<<"Masukkan Nama anda : ";
+			cin>>nama;
+			q.push(nama);
+			getch();
+			break;
 		case 2:
       
 			break;

@@ -26,12 +26,8 @@ void cekAntrean(queue <string> qu){
 
 void pressKey()
 {
-   
-    printf("Silahkan Menekan Enter Untuk Memesan....\n");
-
-    getchar();
-
-
+  printf("Silahkan Menekan Enter Untuk Memesan....\n");
+	getchar();
 }
 
 
@@ -52,10 +48,11 @@ do{
 	system("cls");
 	cout << "-----------------------------------------------------------------" << endl;
 	cout << "              >>>>>>>>>> Bubble Cafe <<<<<<<<<<                           "<< endl;
- 	cout << "-----------------------------------------------------------------" << endl;
+ 	cout << "-----------------------------------------------------------------" <<
 	cout<<"\n1.Ambil Antrean\n2.Pilih Menu\n3.Cek Antrean\n4.Keluar\nMasukkan Pilihan : ";
 	cin>>menu;	
 	switch(menu){
+		
 		case 1:
 			cout<<"Masukkan Nama Anda : ";
 			cin>>nama;
@@ -85,8 +82,8 @@ do{
 			Sleep(5000);
 			system("cls");
 			}else{
-				cout<<"Antrian kosong!\n";
-				getch();
+			cout<<"Antrian kosong!\n";
+			getch();
 			}
 			break;
 			

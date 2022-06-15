@@ -27,6 +27,7 @@ int main(){
 	string Menu[] = {"Classic Pancake","Croffle","Nachos","Potato Wedges","Loco Moco"};
 	int jumlahMenu,hargaMenu[] = {30000,45000,50000,35000,45000};
 	int arrSize = sizeof(Menu)/sizeof(Menu[0]);
+	
 do{
 	cout << "-----------------------------------------------------------------" << endl;
 	cout << "                           Bubble Cafe                           "<< endl;
@@ -40,6 +41,7 @@ do{
 			q.push(nama);
 			getch();
 			break;
+			
 		case 2:
       			if(!q.empty()){
 			cout<<"\nHarga Menu: \n";
@@ -66,6 +68,7 @@ do{
 				getch();
 			}
 			break;
+			
 		case 3:
 			cekAntrean(q);
 		break;

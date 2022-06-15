@@ -12,7 +12,7 @@ void cekAntrean(queue<string> qu){
 		cout<<number<<". "<<q.front()<<"\n";
 		q.pop();
 		number++;
-	}a
+	}
 	}else{
 		cout<<"Antrian kosong!";
 		getch();

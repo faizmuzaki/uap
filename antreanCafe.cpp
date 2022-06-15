@@ -59,9 +59,9 @@ do{
 			cout<<"\nNama Menu : "<<Menu[pilihMenu-1];
 			cout<<"\nJumlah Menu : "<<jumlahMenu;
 			cout<<"\nJumlah yang Harus Dibayar : "<<hargaMenu[pilihMenu-1]*jumlahMenu;
-			cout<<"\nBerhasil melakukan pemesanan, data akan dikurangi\nyou will redirect in 3 seconds";
+			cout<<"\nBerhasil melakukan pemesanan, data akan dikurangi\nyou will redirect in 5 seconds";
 			q.pop();
-			Sleep(3000);
+			Sleep(5000);
 			system("cls");
 			}else{
 				cout<<"Antrian kosong!\n";

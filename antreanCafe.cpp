@@ -4,8 +4,8 @@
 #include <windows.h>
 using namespace std;
 
-void cekAntrean(queue<string> qu){
-	queue<string> q = qu;
+void cekAntrean(queue <string> qu){
+	queue <string> q = qu;
 	int number = 1;
 	if(!q.empty()){
 	while(!q.empty()){
@@ -21,11 +21,11 @@ void cekAntrean(queue<string> qu){
 }
 
 int main(){
-	int menu,pilihMenu;
+	int menu, pilihMenu;
 	string nama;
-	queue<string> q;
-	string Menu[] = {"Classic Pancake","Croffle","Nachos","Potato Wedges","Loco Moco"};
-	int jumlahMenu,hargaMenu[] = {30000,45000,50000,35000,45000};
+	queue <string> q;
+	string Menu[] = {"Classic Pancake", "Croffle", "Nachos", "Potato Wedges", "Loco Moco"};
+	int jumlahMenu,hargaMenu[] = {30000, 45000, 50000, 35000, 45000};
 	int arrSize = sizeof(Menu)/sizeof(Menu[0]);
 	
 do{
@@ -36,7 +36,7 @@ do{
 	cin>>menu;	
 	switch(menu){
 		case 1:
-			cout<<"Masukkan Nama anda : ";
+			cout<<"Masukkan Nama Anda : ";
 			cin>>nama;
 			q.push(nama);
 			getch();
@@ -48,8 +48,8 @@ do{
 			for(int i = 0; i<arrSize; i++)
 				cout<<i+1<<". "<<Menu[i]<<" : "<<hargaMenu[i]<<endl;
 			cout<<endl;
-			cout<<"Silahkan customer atas nama "<<q.front()<<" memilih menu\n";
-			cout<<"Pilih obat : ";	
+			cout<<"Silahkan Customer Atas Nama "<<q.front()<<" Memilih Menu\n";
+			cout<<"Pilih Menu : ";	
 			cin>>pilihMenu;
 			cout<<"Masukkan Jumlah Menu : ";
 			cin>>jumlahMenu;
@@ -58,7 +58,7 @@ do{
 			cout<<"Nama Pemesan : "<<q.front();
 			cout<<"\nNama Menu : "<<Menu[pilihMenu-1];
 			cout<<"\nJumlah Menu : "<<jumlahMenu;
-			cout<<"\nHarus Dibayar : "<<hargaMenu[pilihMenu-1]*jumlahMenu;
+			cout<<"\nJumlah yang Harus Dibayar : "<<hargaMenu[pilihMenu-1]*jumlahMenu;
 			cout<<"\nBerhasil melakukan pemesanan, data akan dikurangi\nyou will redirect in 3 seconds";
 			q.pop();
 			Sleep(3000);

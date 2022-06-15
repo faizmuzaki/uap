@@ -12,7 +12,7 @@ void cekAntrean(queue<string> qu){
 		cout<<number<<". "<<q.front()<<"\n";
 		q.pop();
 		number++;
-	}
+	}a
 	}else{
 		cout<<"Antrian kosong!";
 		getch();
@@ -41,10 +41,33 @@ do{
 			getch();
 			break;
 		case 2:
-      
+      			if(!q.empty()){
+			cout<<"\nHarga Menu: \n";
+			for(int i = 0; i<arrSize; i++)
+				cout<<i+1<<". "<<Menu[i]<<" : "<<hargaMenu[i]<<endl;
+			cout<<endl;
+			cout<<"Silahkan customer atas nama "<<q.front()<<" memilih menu\n";
+			cout<<"Pilih obat : ";	
+			cin>>pilihMenu;
+			cout<<"Masukkan Jumlah Menu : ";
+			cin>>jumlahMenu;
+			system("cls");
+			cout<<"Struk Pembayaran \n";
+			cout<<"Nama Pemesan : "<<q.front();
+			cout<<"\nNama Menu : "<<Menu[pilihMenu-1];
+			cout<<"\nJumlah Menu : "<<jumlahMenu;
+			cout<<"\nHarus Dibayar : "<<hargaMenu[pilihMenu-1]*jumlahMenu;
+			cout<<"\nBerhasil melakukan pemesanan, data akan dikurangi\nyou will redirect in 3 seconds";
+			q.pop();
+			Sleep(3000);
+			system("cls");
+			}else{
+				cout<<"Antrian kosong!\n";
+				getch();
+			}
 			break;
 		case 3:
-
+			cekAntrean(q);
 		break;
 	}
 }

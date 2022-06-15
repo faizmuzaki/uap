@@ -26,7 +26,7 @@ void cekAntrean(queue <string> qu){
 
 void pressKey()
 {
-  printf("Silahkan Menekan Enter Untuk Memesan....\n");
+  printf("Silahkan Tekan Enter Untuk Memesan....\n");
 	getchar();
 }
 
@@ -48,7 +48,7 @@ do{
 	system("cls");
 	cout << "-----------------------------------------------------------------" << endl;
 	cout << "              >>>>>>>>>> Bubble Cafe <<<<<<<<<<                           "<< endl;
- 	cout << "-----------------------------------------------------------------" <<
+ 	cout << "-----------------------------------------------------------------" << endl;
 	cout<<"\n1.Ambil Antrean\n2.Pilih Menu\n3.Cek Antrean\n4.Keluar\nMasukkan Pilihan : ";
 	cin>>menu;	
 	switch(menu){

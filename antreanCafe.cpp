@@ -2,6 +2,10 @@
 #include <queue>
 #include <conio.h>
 #include <windows.h>
+#include <stdio.h>
+
+
+
 using namespace std;
 
 void cekAntrean(queue <string> qu){
@@ -20,6 +24,17 @@ void cekAntrean(queue <string> qu){
 	cout<<"\n";
 }
 
+void pressKey()
+{
+   
+    printf("Silahkan Menekan Enter Untuk Memesan....\n");
+
+    getchar();
+
+
+}
+
+
 int main(){
 	int menu, pilihMenu;
 	string nama;
@@ -29,10 +44,16 @@ int main(){
 	int arrSize = sizeof(Menu)/sizeof(Menu[0]);
 	
 do{
+	
+	cout<<"=============================================================="<<endl;
+	cout<<"                  Selamat Datang di Bubble Cafe :)"<<endl;
+	cout<<"=============================================================="<<endl;
+	pressKey();
+	system("cls");
 	cout << "-----------------------------------------------------------------" << endl;
-	cout << "                           Bubble Cafe                           "<< endl;
+	cout << "              >>>>>>>>>> Bubble Cafe <<<<<<<<<<                           "<< endl;
  	cout << "-----------------------------------------------------------------" << endl;
-	cout<<"1.Ambil Antrean\n2.Pilih Menu\n3.Cek Antrean\n4.Exit\nMasukkan Pilihan : ";
+	cout<<"\n1.Ambil Antrean\n2.Pilih Menu\n3.Cek Antrean\n4.Keluar\nMasukkan Pilihan : ";
 	cin>>menu;	
 	switch(menu){
 		case 1:

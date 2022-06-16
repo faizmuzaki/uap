@@ -19,8 +19,8 @@ void cekAntrean(queue <string> qu){
 	}
 	}else{
 		cout<<"Antrian kosong!";
-		getch();
 	}
+	getch();
 	cout<<"\n";
 }
 
